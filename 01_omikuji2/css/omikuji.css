@@ -2,25 +2,25 @@
 
 html{font-size: 18px;}
 
-*, *::before, *::after{
-    box-sizing: border-box;
+    *, *::before, *::after{
+        box-sizing: border-box;
 }
 
 
 body{
     margin: 0;
-line-height: normal; 
-font-family: "Helvetica Neue",
-Arial,
-"Hiragino Kaku Gothic ProN",
-"Hiragino Sans",
-Meiryo,
-sans-serif;
-/*background: rgb(227, 215, 208);*/
-background-image: url(../img/flowers.png);
-overflow: hidden;
-background-size: cover;
-/*background-repeat: no-repeat;*/
+    line-height: normal; 
+    font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+    /*background: rgb(227, 215, 208);*/
+    background-image: url(../img/flowers.png);
+    overflow: hidden;
+    background-size: cover;
+    /*background-repeat: no-repeat;*/
 
 }
 
@@ -54,10 +54,10 @@ p{
         margin: 20px auto;
         width: 200px;
         height: 400px;
-       background-image: url(../img/omikuji.png);
-       background-size: contain;
-       background-repeat: no-repeat;
-       cursor: pointer;
+        background-image: url(../img/omikuji.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
     }
 
     #btn1:hover{
@@ -88,16 +88,16 @@ p{
         transition: 1s;
     }
 
-    fooder{
-    position: absolute;
-    bottom: 5px;
-    width: 100%;
-    margin: 0px;
-    padding: 1px;
-    color: whitesmoke;
-    font: 16px ;
-    text-align: center;
-    background: rgba(253,4, 120, 0.5);
+    fooder {
+        position: absolute;
+        bottom: 5px;
+        width: 100%;
+        margin: 0px;
+        padding: 1px;
+        color: whitesmoke;
+        font: 16px ;
+        text-align: center;
+        background: rgba(253,4, 120, 0.5);
     }
 
     .shutter
