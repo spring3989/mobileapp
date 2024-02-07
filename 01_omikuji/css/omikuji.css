@@ -9,25 +9,25 @@ html{font-size: 18px;}
 
 body{
     margin: 0;
-line-height: normal; 
-font-family: "Helvetica Neue",
-Arial,
-"Hiragino Kaku Gothic ProN",
-"Hiragino Sans",
-Meiryo,
-sans-serif;
+    line-height: normal; 
+    font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
 /*background: rgb(227, 215, 208);*/
-background-image: url(../img/flowers.png);
-overflow: hidden;
-background-size: cover;
+    background-image: url(../img/flowers.png);
+    overflow: hidden;
+    background-size: cover;
 /*background-repeat: no-repeat;*/
 
 }
 
-p{
-    margin: 0;
-    padding: 0;
-    }
+    p{
+        margin: 0;
+        padding: 0;
+        }
 
     /* Header*/
     header{
@@ -65,7 +65,7 @@ p{
         box-shadow: 0 10px 0 #9a5968;
         justify-content: center;
         cursor: pointer;
-        transition:  1s;
+        /* transition:  1s; */
         user-select: none;
     }
 
@@ -81,15 +81,15 @@ p{
     }
 
     fooder{
-    position: absolute;
-    bottom: 5px;
-    width: 100%;
-    margin: 0px;
-    padding: 1px;
-    color: whitesmoke;
-    font: 16px ;
-    text-align: center;
-    background: rgba(253,4, 120, 0.5);
+        position: absolute;
+        bottom: 5px;
+        width: 100%;
+        margin: 0px;
+        padding: 1px;
+        color: whitesmoke;
+        font: 16px ;
+        text-align: center;
+        background: rgba(253,4, 120, 0.5);
     }
 
     .shutter

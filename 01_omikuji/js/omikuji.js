@@ -60,14 +60,15 @@ function(){
 
 btn1.style.transition ="1s";
 let resultText = ["大吉","吉","中吉","小吉","末吉","凶"];
-let resultColor = ["#ff0000","#c555555","#ff1493","#ff69b4","ff8c00","#1e90ff"];
+let resultColor = ["#ff0000","#c71585","#ff1493","#ff69b4","ff8c00","#1e90ff"];
 let resultFontSize = ["55px","50px","45px","40px","35px","30px"];
 let resultMaxSpeed = [10,10,8,5,5,5];
 let resultMaxSize = [50,30,20,15,20,20];
-let resultImage = ["img/star.png"]
+let resultImage = ["img/star.png","img/sakura_hanabira.png","img/sakura_hanabira.png","img/sakura_hanabira.png","img/leaf.png","img/snowflakes.png"];
 
 
 let n =Math.floor(Math.random() * resultText.length);
+console.log(n);
 btn1.textContent = resultText[n];
 btn1.style.color = resultColor[n];
 btn1.style.fontSize = resultFontSize[n];
@@ -79,9 +80,9 @@ btn1.style.fontSize = resultFontSize[n];
         $(document).snowfall({
             maxSpeed : resultMaxSpeed[n],
             minSpeed : 1,   
-            maxSize : 20,
+            maxSize : resultMaxSize[n],
             minSize : 1,
-            image : 'img/sakura_hanabira.png',
+            image : resultImage[n],
         });
     });
 
