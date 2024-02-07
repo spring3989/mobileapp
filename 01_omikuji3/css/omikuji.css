@@ -2,25 +2,25 @@
 
 html{font-size: 18px;}
 
-*, *::before, *::after{
-    box-sizing: border-box;
+    *, *::before, *::after{
+        box-sizing: border-box;
 }
 
 
 body{
     margin: 0;
-line-height: normal; 
-font-family: "Helvetica Neue",
-Arial,
-"Hiragino Kaku Gothic ProN",
-"Hiragino Sans",
-Meiryo,
-sans-serif;
-/*background: rgb(227, 215, 208);*/
-background-image: url(../img/yoksel-zok-3sgzxI3iQVw-unsplash.jpg);
-overflow: hidden;
-background-size: cover;
-/*background-repeat: no-repeat;*/
+    line-height: normal; 
+    font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+    /*background: rgb(227, 215, 208);*/
+    background-image: url(../img/omikuji_background.jpg);
+    overflow: hidden;
+    background-size: cover;
+    /*background-repeat: no-repeat;*/
 
 }
 
@@ -51,13 +51,13 @@ p{
 
     #btn1{
         position: relative;
-        margin: 0px auto;
+        margin: 20px auto;
         width: 280px;
         height: 280px;
-       background-image: url(../img/omikuji3.png);
-       background-size: contain;
-       background-repeat: no-repeat;
-       cursor: pointer;
+        background-image: url(../img/omikuji3.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
     }
 
     #btn1:hover{
@@ -83,9 +83,9 @@ p{
     #omikujiText{
         position:relative;
         margin: 10px auto;
-        /* font-weight: 800;
+        /*font-weight: 800;
         text-shadow: 3px  3px 3px rgb(232, 197, 194);
-        transition: 1s; */
+        transition: 1s;*/
     }
 
     .omikujiPaper{
@@ -103,16 +103,16 @@ p{
         }
     }
 
-    footer{
-    position: absolute;
-    bottom: 5px;
-    width: 100%;
-    margin: 0px;
-    padding: 1px;
-    color: whitesmoke;
-    font: 16px ;
-    text-align: center;
-    background: rgba(253,4, 120, 0.5);
+    footer {
+        position: absolute;
+        bottom: 5px;
+        width: 100%;
+        margin: 0px;
+        padding: 1px;
+        color: whitesmoke;
+        font: 16px ;
+        text-align: center;
+        background: rgba(253,4, 120, 0.5);
     }
 
     .shutter
@@ -173,36 +173,39 @@ p{
     }
 
  
-@media screen and (max-width: 480px) and (max-height:900px){
-    body{
-        background-position: 75% 0%;
+    @media screen and (max-width: 480px) and (max-height:900px){
+        body{
+            background-position: 75% 0%;
+        }
+        header {
+            margin-top: 20px;
+            font-size: 30px;
+        }
+        #btn1{
+            width: 260px;
+            height: 260px;
+        }
+        #omikujiText{
+            margin: 30px;
+        }
     }
-    header {
-        margin-top: 20px;
-        font-size: 30px;
+        
+    @media screen and (max-width:480px) and (max-height:667){
+        header {
+            margin-top: 10px;
+            font-size: 30px;
+        }
+        #btn1{
+            width: 260px;
+            height: 260px;
+        }
+        #omikujiText{
+            margin: 0;
+        }
+        #omikujiTextImage{
+            width: 30%;
+        }
     }
-    #btn1{
-        width: 150px;
-        height: 280px;
-    }
-    #omikujiText{
-        margin: 30px;
-    }
-}
+
+
     
-@media screen and (max-width:480px) and (max-height:667){
-    header {
-        margin-top: 10px;
-        font-size: 30px;
-    }
-    #btn1{
-        width: 260px;
-        height: 260px;
-    }
-    #omikujiText{
-        margin: 0;
-    }
-    #omikujiTextImage{
-        width: 30%;
-    }
-}

@@ -3,10 +3,6 @@
 let n = "";
 let nBefore = "";
 
-
-resultText.length = 
-
-
 window.addEventListener("DOMContentLoaded",
 function(){
     
@@ -48,31 +44,42 @@ btn1.addEventListener("click",
     function(){
         if(soundEndflag === "1") {
             soundControl("end","");
-    }
+        }
 
-let resultText = ["img/daikichi.png","img/chukichi.png","img/syokichi.png","img/suekichi.png","img/daikyo.png",];
+        let resultText = ["img/daikichi.png","img/chukichi.png","img/syokichi.png","img/suekichi.png","img/daikyo.png"];
+        let resultMaxSpeed = [10,10,8,5,5];
+        let resultMaxSize = [30,30,30,40,30];
+        let resultImage = ["img/sakura_hanabira.png","img/water1.png","img/redLeaves2.png","img/snowflakes.png","img/star.png"];
+        let resultSound = ["sound/omikuji_sound1.mp3","sound/omikuji_sound2.mp3","sound/omikuji_sound3.mp3","sound/omikuji_sound4.mp3","sound/omikuji_sound5.mp3"];
+        
+        /*let resultText = ["大吉","吉","中吉","小吉","末吉","凶"];
+let resultColor = ["#ff0000","#c555555","#ff1493","#ff69b4","ff8c00","#1e90ff"];
+let resultFontSize = ["90px","80px","70px","60px","50px","40px"];
 let resultMaxSpeed = [10,10,8,5,5,5];
-let resultMaxSize = [30,30,30,40,30];
-let resultImage = ["img/sakura_hanabira.png","img/water1.png","img/redLeaves2.png","img/snowflakes.png","img/star.png"];
-let resultSound = ["sound/omikuji_sound1.mp3","sound/omikuji_sound2.mp3","sound/omikuji_sound3.mp3","sound/omikuji_sound4.mp3","sound/omikuji_sound5.mp3"];
+let resultMaxSize = [50,30,20,15,20,20];
+let resultImage = ["img/sakura_hanabira.png","img/leaf.png","img/butterfly2.png","img/star.png","img/redLeaves5.png","img/redLeaves10.png"];
+let resultSound = ["sound/omikuji_sound1.mp3","sound/omikuji_sound2.mp3","sound/omikuji_sound3.mp3","sound/omikuji_sound4.mp3","sound/omikuji_sound4.mp3","sound/omikuji_sound5.mp3"];
 
-/*let n =Math.floor(Math.random() * resultText.length);*/
+        let n =Math.floor(Math.random() * resultText.length);*/
 
-while ( n === nBefore ){
-    n =Math.floor(Math.random() * resultText.length);
-}
-n = nBefore;
+        while ( n === nBefore ){
+            n =Math.floor(Math.random() * resultText.length);
+        }
+            nBefore = n;
 
+        /*omikujiText.textContent = resultText[n];
+        omikujiText.style.color = resultColor[n];
+        omikujiText.style.fontSize = resultFontSize[n];*/
 
-omikujiTextImage.src = resultText[n];
-omikujiTextImage.classList.add("omikujiPaper");
-
-omikujiTextImage.addEventListener("animationend",
-    function() {
-        omikujiTextImage.classList.remove("omikujiPaper");
-
-    },false
-);
+        omikujiTextImage.src = resultText[n];
+        omikujiTextImage.classList.add("omikujiPaper");
+        
+        omikujiTextImage.addEventListener("animationend",
+            function() {
+                omikujiTextImage.classList.remove("omikujiPaper");
+        
+            },false
+        );
 
 w_sound = resultSound[n];
 soundControl("start", w_sound);
@@ -92,12 +99,12 @@ soundEndflag = "1";
                     image : resultImage[n],
                 });
             });
+
         },
-        "200"
-    );
-    },false
+         "200"
+   );
+ }, false
 );
-    
 
 let w_sound
 let music
